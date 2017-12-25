@@ -81,6 +81,12 @@ h1 {
     font-size: 33px;
 }
 
+.deck .card.no-match {
+    cursor: default;
+    background: red;
+    font-size: 33px;
+}
+
 /*
  * Styles for the Score Panel
  */
@@ -103,7 +109,25 @@ h1 {
     display: inline-block;
 }
 
+.score-panel .timer {
+    margin: 0 50px;
+}
+
 .score-panel .restart {
     float: right;
     cursor: pointer;
+}
+
+.winning-message-field {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.play-again {
+    background-color: green;
+    color: #ffffff;
+    width: 100px;
+    height: 30px;
 }
